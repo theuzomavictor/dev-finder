@@ -15,3 +15,11 @@ Functional requirements
 * GET twitter username
 * GET blog
 * GET company
+
+
+Colors 
+
+#141c2f
+#ffffff
+#1f2a48
+#0079fe

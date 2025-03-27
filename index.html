@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>devfinder</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
@@ -14,6 +15,60 @@
                 <img src="./images/icon-sun.svg" alt="Sun icon">
             </div>
         </nav>
+        <div class="main">
+            <section class="form">
+                <form>
+                    <img src="./images/icon-search.svg" alt="Search bar icon">
+                    <input type="text" id="input" placeholder="Search GitHub username...">
+                    <button id="btn">Search</button>
+                </form>
+            </section>
+            <section class="details-container">
+                <div class="profile-details">
+                    <img src="./images/user-avatar1.JPG" alt="placeholder profile picture" class="img">
+                    <div class="profile-details-text">
+                        <h2>Name</h2>
+                        <p>Login name</p>
+                        <p>Date joined</p>
+                    </div>
+                </div>
+                <p class="bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dolores repellat, est ab officia ducimus enim magnam aspernatur vel neque?</p>
+                <div class="engagement">
+                    <div class="repo">
+                        <h3>Repo</h3>
+                        <p>8</p>
+                    </div>
+                    <div class="followers">
+                        <h3>Followers</h3>
+                        <p>3938</p>
+                    </div>
+                    <div class="following">
+                        <h3>Following</h3>
+                        <p>9</p>
+                    </div>
+                </div>
+                <div class="more-details">
+                    <div>
+                        <img src="./images/icon-location.svg" alt="Location icon svg">
+                        <p>San fransisco</p>
+                    </div>
+                    <div>
+                        <img src="./images/icon-website.svg" alt="website icon svg">
+                        <p>web-link</p>
+                    </div>
+                    <div>
+                        <img src="./images/icon-twitter.svg" alt="twitter icon svg">
+                        <p>Not available</p>
+                    </div>
+                    <div>
+                        <img src="./images/icon-company.svg" alt="Location icon svg">
+                        <p>@github</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
