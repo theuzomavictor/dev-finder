@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>devfinder</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
@@ -16,11 +17,10 @@
             </div>
         </nav>
         <div class="main">
-            <section class="form">
-                <form>
-                    <img src="./images/icon-search.svg" alt="Search bar icon">
-                    <input type="text" id="input" placeholder="Search GitHub username...">
-                    <button id="btn">Search</button>
+            <section>
+                <form class="form">
+                    <input type="text" id="input-el" placeholder="GitHub username...">
+                    <button id="btn-el" class="btn" ><img src="./images/icon-search.svg" alt="Search bar icon"></button>
                 </form>
             </section>
             <section class="details-container">
@@ -28,7 +28,7 @@
                     <img src="./images/user-avatar1.JPG" alt="placeholder profile picture" class="img">
                     <div class="profile-details-text">
                         <h2>Name</h2>
-                        <p>Login name</p>
+                        <p class="login-name">Login name</p>
                         <p>Date joined</p>
                     </div>
                 </div>
@@ -48,22 +48,26 @@
                     </div>
                 </div>
                 <div class="more-details">
-                    <div>
-                        <img src="./images/icon-location.svg" alt="Location icon svg">
-                        <p>San fransisco</p>
-                    </div>
-                    <div>
-                        <img src="./images/icon-website.svg" alt="website icon svg">
-                        <p>web-link</p>
-                    </div>
-                    <div>
-                        <img src="./images/icon-twitter.svg" alt="twitter icon svg">
-                        <p>Not available</p>
-                    </div>
-                    <div>
-                        <img src="./images/icon-company.svg" alt="Location icon svg">
-                        <p>@github</p>
-                    </div>
+                    <section class="left">
+                        <div>
+                            <img src="./images/icon-location.svg" alt="Location icon svg">
+                            <p class="san-frn">San fransisco</p>
+                        </div>
+                        <div>
+                            <img src="./images/icon-website.svg" alt="website icon svg">
+                            <p>web-link</p>
+                        </div>
+                    </section>
+                    <section class="right">
+                        <div>
+                            <img src="./images/icon-twitter.svg" alt="twitter icon svg">
+                            <p>Not available</p>
+                        </div>
+                        <div>
+                            <img src="./images/icon-company.svg" alt="Location icon svg">
+                            <p>@github</p>
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>
