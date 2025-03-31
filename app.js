@@ -3,15 +3,9 @@ const formEl = document.querySelector(".form")
 const btnEl = document.getElementById("btn-el")
 const mainEl = document.getElementById("main-container")
 
-const themeToggle = document.querySelector(".theme-toggle")
-        themeToggle.addEventListener("click", () => {
-            document.body.classList.toggle("dark")
-        })
-
 formEl.addEventListener("submit", (e) => {
     e.preventDefault()
     const inputEl = document.getElementById("input-el").value
-    console.log(inputEl)
     fetch(`https://api.github.com/users/${inputEl}`)
         .then(response => response.json())
         .then(data => {
