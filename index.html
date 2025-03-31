@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>devfinder</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
 </head>
-<body>
-    <div class="container">
-        <nav class="navbar">
-            <h1>devfinder</h1>
-            <div class="theme-toggle">
-                <P>LIGHT</P>
-                <img src="./images/icon-sun.svg" alt="Sun icon">
-            </div>
+<body class="bg-[#141c2f] text-[#ffffff] box-border py-10">
+    <div class="container w-4/5 mx-auto text-base font-mono transition-colors bg-[#141c2f] text-[#ffffff]">
+        <nav class="navbar flex justify-between items-center">
+            <h1 class="text-2xl">devfinder</h1>
         </nav>
         <div class="main">
             <section>
-                <form class="form">
-                    <input type="text" id="input-el" placeholder="GitHub username...">
-                    <button id="btn-el" class="btn" ><img src="./images/icon-search.svg" alt="Search bar icon"></button>
+                <form class="form flex justify-between bg-[#1f2a48] mt-8 mb-8 px-5 py-3 rounded-md">
+                    <input type="text" class="w-4/5 text-[#ffffff]" id="input-el" placeholder="GitHub username...">
+                    <button id="btn-el" class="" ><img class="w-5" src="./images/icon-search.svg" alt="Search bar icon"></button>
                 </form>
             </section>
             <section id="main-container">
-                <section class="details-container">
-                    <div class="profile-details">
-                        <img src="./images/user-avatar1.JPG" alt="placeholder profile picture" class="img">
+                <section class="details-container bg-[#1f2a48] p-5 rounded-md">
+                    <div class="profile-details flex gap-6 mb-6 items-center">
+                        <img src="./images/user-avatar1.JPG" alt="placeholder profile picture" class="rounded-full w-18 h-18">
                         <div class="profile-details-text">
-                            <h2>Uzoma</h2>
-                            <p class="login-name" id="login-name">@uzoma</p>
+                            <h2 class="text-2xl">Uzoma</h2>
+                            <p class="login-name text-[#0079fe]" id="login-name">@uzoma</p>
                             <p>Joined 25-12-2000</p>
                         </div>
                     </div>
-                    <p class="bio">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dolores repellat, est ab officia ducimus enim magnam aspernatur vel neque?</p>
-                    <div class="engagement">
+                    <p class="mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dolores repellat, est ab officia ducimus enim magnam aspernatur vel neque?</p>
+                    <div class="bg-[#141c2f] flex mx-auto justify-between px-4 py-3 rounded-md text-center mb-8">
                         <div class="repo">
                             <h3>Repo</h3>
                             <p>8</p>
@@ -50,21 +46,21 @@
                     </div>
                     <div class="more-details">
                         <section class="left">
-                            <div>
+                            <div class="flex items-center gap-6 mb-3">
                                 <img src="./images/icon-location.svg" alt="Location icon svg">
-                                <p class="san-frn">San fransisco</p>
+                                <p class="pl-1">San fransisco</p>
                             </div>
-                            <div>
+                            <div class="flex items-center gap-6 mb-3">
                                 <img src="./images/icon-website.svg" alt="website icon svg">
-                                <p>web-link</p>
+                                <p>web-link Lorem ipsum dolor sit amet.</p>
                             </div>
                         </section>
                         <section class="right">
-                            <div>
+                            <div class="flex items-center gap-6 mb-3">
                                 <img src="./images/icon-twitter.svg" alt="twitter icon svg">
                                 <p>Not available</p>
                             </div>
-                            <div>
+                            <div class="flex items-center gap-6 mb-3">
                                 <img src="./images/icon-company.svg" alt="Location icon svg">
                                 <p>@github</p>
                             </div>
